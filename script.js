@@ -30,12 +30,13 @@ function calculateAge(event) {
 
   var ageYears = today.getFullYear() - birthDate.getFullYear();
   var ageMonths = today.getMonth() - birthDate.getMonth();
-  var ageDays = today.getDate() - birthDate.getDate();
+var ageDays = today.getDate() - birthDate.getDate();
 
-  if (ageDays < 0) {
-      ageMonths--;
-      ageDays += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
-  }
+if (ageDays < 0) {
+    ageMonths--;
+    var lastMonthDate = new Date(today.getFullYear(), today.getMonth() - 1, 0).getDate();
+    ageDays += lastMonthDate;
+}
 
   if (ageMonths < 0) {
       ageYears--;

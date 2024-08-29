@@ -1,29 +1,12 @@
 {
   "name": "age",
-  "private": true,
   "version": "1.0.0",
-  "type": "module",
+  "main": "script.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node script.js"
   },
   "author": "Alperen",
   "license": "ISC",
-  "devDependencies": {
-    "vite": "^4.2.0"
-  },
-  "main": "script.js",
-<<<<<<< HEAD
-  "dependencies": {
-    "esbuild": "^0.18.20",
-    "nanoid": "^3.3.7",
-    "picocolors": "^1.0.1",
-    "postcss": "^8.4.41",
-    "rollup": "^3.29.4",
-    "source-map-js": "^1.2.0"
-  },
-=======
->>>>>>> 5d0975ff447c499f8c33fa32ff203f69d8e574fc
   "description": ""
 }
