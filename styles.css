@@ -193,8 +193,8 @@ input {
     .icon-button {
       position: absolute;
       left: 50%;
-      transform: translateX(-30%) translateY(-205%); /* Ekranın ortasında ve çizginin üstünde konumlandırma */
-      top: 50%; /* Çizginin üstünde konumlandırma */
+      transform: translateX(-30%) translateY(-205%);
+      top: 50%;
       border: none;
       background: white;
       border-radius: 50%;
@@ -260,8 +260,8 @@ input {
     .icon-button {
       position: absolute;
       left: 50%;
-      transform: translateX(-30%) translateY(-205%); /* Ekranın ortasında ve çizginin üstünde konumlandırma */
-      top: 50%; /* Çizginin üstünde konumlandırma */
+      transform: translateX(-30%) translateY(-205%);
+      top: 50%;
       border: none;
       background: white;
       border-radius: 50%;
