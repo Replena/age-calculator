@@ -38,7 +38,6 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 100%;
   min-height: 100vh; 
   width: 100vw;
 }
@@ -102,18 +101,18 @@ input {
 }
 
 .icon-button {
-  position: absolute;
-  right: 70px;
-  top: 60%;
-  transform: translateY(-285%);
-  border: none;
-  background: white;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    right: 70px;
+    top: 60%;
+    transform: translateY(-285%);
+    border: none;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .divider {
@@ -159,48 +158,138 @@ input {
 }
 
 @media (max-width: 768px) {
-  .main-section {
-    width: 100%;
-    padding: 30px;
-    border-radius: 20px;
-  }
+    .main-section {
+      margin: auto 5px;
+      width: 70%; 
+      m
+    }
+  
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  
+    input {
+      font-size: 1.7vh;
+      background-color: white;
+     
+    }
+  
+    .result {
+      font-size: 0.8rem;
+    }
+  
+    span {
+      font-size: 3rem;
+    }
+  
 
-  .icon-button {
-    right: 20px;
-    top: 70%;
-  }
+    input::placeholder {
+      font-size: 0.9rem;
+    }
+  
+    .icon-button {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-30%) translateY(-205%); /* Ekranın ortasında ve çizginin üstünde konumlandırma */
+      top: 50%; /* Çizginin üstünde konumlandırma */
+      border: none;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+  
+    .divider {
+      position: relative;
+      width: 90%;
+      height: 1px;
+      background-color: var(--LightGrey);
+      margin: 30px auto;
+      transform: translate(15%, -100%);
+    }
+    .error-message {
+        color: var(--LightRed);
+        font-size: 1rem;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+      }
 
-  .divider {
-    width: calc(100% - 40px);
-    right: 20px;
-  }
 
-  .result p {
-    font-size: 2em;
   }
-}
+  @media (max-width: 480px) {
+    .main-section {
+      margin: auto 5px;
+      width: 70%; 
+      m
+    }
+  
+    .main-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  
+    input {
+      font-size: 1.7vh;
+      background-color: white;
+      
+    }
+  
+    .result {
+      font-size: 0.8rem;
+    }
+  
+    span {
+      font-size: 3rem;
+    }
+  
 
-@media (max-width: 480px) {
-  .main-section {
-    width: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    margin-left: 0;
-    margin-right: 0;
-  }
+    input::placeholder {
+      font-size: 0.9rem;
+    }
+  
+    .icon-button {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-30%) translateY(-205%); /* Ekranın ortasında ve çizginin üstünde konumlandırma */
+      top: 50%; /* Çizginin üstünde konumlandırma */
+      border: none;
+      background: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+    }
+  
+    .divider {
+      position: relative;
+      width: 90%;
+      height: 1px;
+      background-color: var(--LightGrey);
+      margin: 30px auto;
+      transform: translate(15%, -100%);
+    }
+    .error-message {
+        color: var(--LightRed);
+        font-size: 1rem;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+      }
 
-  .icon-button {
-    position: relative;
-    left: 50%;
-    margin-left: -120px;
-  }
 
-  .divider {
-    width: calc(100% - 20px);
-    right: 10px;
   }
-
-  .result p {
-    font-size: 1.5em;
-  }
-}
